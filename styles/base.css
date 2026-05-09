@@ -10,8 +10,9 @@ body {
 }
 
 header{
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
+  text-align: center;
 }
 
 main {
@@ -20,7 +21,7 @@ main {
 }
 
 footer {
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
   }
