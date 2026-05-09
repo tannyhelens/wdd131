@@ -2,9 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>WDD131</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Dynamic Web Fundamentals - SEU NOME</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals home page by SEU NOME">
+  <meta name="author" content="SEU NOME">
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-  <h1>My WDD131 Home Page</h1>
+  <header>
+    <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+    <nav>
+      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank">I-Learn</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Tanny Santos</h1>
+
+    <section class="card about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>
+          My name is Tanny. I live in Spanish Fork. I am studying web development
+          and I enjoy learning new things. I like spending time with my family,
+          traveling, and improving my skills.
+        </p>
+        <img src="images/profile-tanny.png" alt="Photo of Tanny Santos">
+      </div>
+
+      <h3>Cuiaba, Brazil</h3>
+      <hr>
+
+      <div class="place-content">
+        <figure>
+          <img src="images/brasil-flag.jpg" alt="Official flag of Brazil">
+          <figcaption>Official Flag of Brazil</figcaption>
+        </figure>
+        <p>
+          Brazil is a beautiful place with interesting culture, food, and history.
+          Many people visit because of its nature, traditions, and friendly people.
+        </p>
+      </div>
+    </section>
+
+    <section class="card resources">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+        <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+        <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+        <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> 🌺 Tanny Santos 🌺 Brazil</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>
