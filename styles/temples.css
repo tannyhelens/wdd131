@@ -121,3 +121,7 @@ footer p {
     }
 
 }
+
+#menu {
+    display: none;
+}
