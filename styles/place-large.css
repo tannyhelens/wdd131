@@ -43,7 +43,7 @@
     .data h2,
     .weather h2 {
         background: var(--accent-color);
-        color: white;
+        color: var(--white);
         padding: 12px;
         margin: -20px -20px 15px -20px;
     }

@@ -72,7 +72,7 @@ main {
 /* Green title inside Data */
 .data h2 {
     background: var(--accent-color);
-    color: white;
+    color:  var(--white);
     padding: 12px;
     margin: -20px -20px 15px -20px;
 }
@@ -89,14 +89,9 @@ main {
 /* Green title inside Weather */
 .weather h2 {
     background: var(--accent-color);
-    color: white;
+    color:  var(--white);
     padding: 12px;
     margin: -20px -20px 15px -20px;
-}
-
-/* Weather emoji desktop */
-.weather h2::after {
-    content: " ⛅";
 }
 
 /* Text spacing */
@@ -119,5 +114,5 @@ footer {
     color: var(--white);
     text-align: center;
     padding: 30px;
-    margin-top: 0;   /* colado na imagem */
+    margin-top: 0;   
 }
