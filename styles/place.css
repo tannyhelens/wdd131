@@ -1,0 +1,128 @@
+:root {
+    --primary-color: #8b0000;
+    --accent-color: #2e7d32;
+    --secondary-color: #e8efe3;
+    --text-color: #222;
+    --white: #ffffff;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+/* Faixa verde */
+header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-color: var(--accent-color);
+}
+
+/* Hero Image */
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Main */
+main {
+    position: relative;
+}
+
+/* Data Box */
+.data {
+    position: absolute;
+    top: 160px;
+    left: 40px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Green title inside Data */
+.data h2 {
+    background: var(--accent-color);
+    color: white;
+    padding: 12px;
+    margin: -20px -20px 15px -20px;
+}
+
+/* Weather Box */
+.weather {
+    position: absolute;
+    top: 250px;
+    right: 40px;
+    background: rgba(255,255,255,0.85);
+    padding: 20px;
+    width: 230px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Green title inside Weather */
+.weather h2 {
+    background: var(--accent-color);
+    color: white;
+    padding: 12px;
+    margin: -20px -20px 15px -20px;
+}
+
+/* Weather emoji desktop */
+.weather h2::after {
+    content: " ⛅";
+}
+
+/* Text spacing */
+.data p,
+.weather p {
+    margin: 0.5rem 0;
+     top: 190px;
+}
+
+/* Weather Icon */
+.weather-icon {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 30px;
+    margin-top: 0;   /* colado na imagem */
+}

@@ -1,0 +1,66 @@
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    /* Main */
+    main {
+        position: relative;
+    }
+
+    /* Hero image */
+    .hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Data box */
+    .data {
+        position: absolute;
+        top: 190px;
+        left: 40px;
+        width: 250px;
+        background: rgba(255, 255, 255, 0.75);
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    /* Weather box */
+    .weather {
+        position: absolute;
+        top: 230px;
+        right: 40px;
+        width: 220px;
+        background: rgba(255, 255, 255, 0.75);
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    /* Green bars inside boxes */
+    .data h2,
+    .weather h2 {
+        background: var(--accent-color);
+        color: white;
+        padding: 12px;
+        margin: -20px -20px 15px -20px;
+    }
+
+    /* Weather emoji on desktop */
+    .weather h2::after {
+        content: " ⛅";
+    }
+
+    /* Hide SVG icon on desktop */
+    .weather-icon {
+        display: none;
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px;
+        margin-top: 0;
+    }
+}
