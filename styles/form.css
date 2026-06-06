@@ -103,3 +103,8 @@ footer p {
         gap: 10px;
     }
 }
+
+.required {
+    color: red;
+    font-weight: bold;
+}
