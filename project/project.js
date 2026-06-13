@@ -1,8 +1,8 @@
 document.getElementById("currentyear").textContent =
-new Date().getFullYear();
+    new Date().getFullYear();
 
 document.getElementById("lastModified").textContent =
-`Last Modified: ${document.lastModified}`;
+    `Last Modified: ${document.lastModified}`;
 
 const menuButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
@@ -23,13 +23,13 @@ const projects = [
 {
     title: "Product Review Form",
     category: "Web Development",
-    image: "images/trabalhando_programacao.avif",
+    image: "images/trabalhandoprogramacao.jpg",
     description: "Interactive review form with validation."
 },
 {
     title: "Utah Place Page",
     category: "Web Development",
-    image: "images/trabalhando_programacao.avif",
+    image: "images/trabalhandoprogramacao.jpg",
     description: "Weather page with responsive design and wind chill calculation."
 },
 {
@@ -41,7 +41,7 @@ const projects = [
 {
     title: "Grocery Receipt System",
     category: "Software Development",
-    image: "images/trabalhando_programacao.avif",
+    image: "images/trabalhandoprogramacao.jpg",
     description: "Python application using CSV files and calculations."
 },
 {
@@ -69,7 +69,7 @@ if (container) {
         card.classList.add("card");
 
         card.innerHTML = `
-            <img src="${project.image}" alt="${project.title}">
+            <img src="${project.image}" loading="lazy" alt="${project.title}">
             <h3>${project.title}</h3>
             <p><strong>${project.category}</strong></p>
             <p>${project.description}</p>
@@ -80,3 +80,11 @@ if (container) {
     });
 
 }
+
+// localStorage
+let visits = Number(localStorage.getItem("visits")) || 0;
+
+visits++;
+
+localStorage.setItem("visits", visits);
+console.log("Visits:", visits);
